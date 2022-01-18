@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="mayberobots.css">
+     <title>Contact :: Maybe Robots</title>
+     <script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+     <div id="wrapper">
+          <header>
+               <div id="logo"><img src="images/mr-logo.png" alt="Maybe Robots Logo"></div>
+               <span id="pageName"><h1>Contact Maybe Robots</h1></span>
+          </header>
+          <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="podcast.html">Podcasts</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li  id="currentPage"><a href="contact.html">Contact</a></li>
+               </ul>
+          </nav>
+          <main>
+               <h2>Hello!</h2>
+               <p>Congratulations. We have now made contact....<br>
+               ...<br>
+               ...<br>
+               ...<br>
+               ...<br>
+               ...<br>
+               ...<br>
+               <br>
+               All right, we jest! If you have a question, feel free to fill out the form below and send it off to us. We do what we can to respond.</p>
+               <form id="contactForm">
+                    <fieldset>
+                         <legend>Contact Us</legend>
+                         <div>
+                              <span class="nameBoxes"><label for="firstName" id="labelFN">First Name:</label><input type="text" name="firstName" id="firstName" placeholder="First Name"></span>
+                              <span class="nameBoxes"><label for="lastName">Last name:</label><input type="text" name="lastName" id="lastName" placeholder="Last Name (Optional)"></span>
+                              <p id="errorMessageFName" class="errorMessage"></p>
+                         </div>
+                         <div>
+                              <label for="returnEmail" id="labelEmail">Return Email:</label><input type="text" name="returnEmail" id="returnEmail" placeholder="example@email.com">
+                              <p id="errorMessageEmail" class="errorMessage"></p>
+                         </div>
+                         <div>
+                              <label for="subject" id="subjectLabel">Subject:</label><input type="text" name="contactSubject" id="contactSubject" placeholder="Are You Robots?!">
+                              <p id="subjectErrMsg" class="errorMessage"></p>
+                              <br>
+                              <label for="contactContent" id="contentLabel">Content:</label>
+                              <textarea name="contactContent" id="contactContent" placeholder="A more thorough inquiry as to whether we are or are not, in fact, robots."></textarea>
+                         </div>
+                    <br>
+                         <div class="inline">
+                              <p>Subscribe to our mailing list?</p>
+                              <div>
+                                   <input type="radio" name="mailList" id="maillistYes" value="maillistYes">
+                                   <label for="maillistYes">Yes!</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                   <input type="radio" name="mailList" id="maillistNo" value="maillistNo">
+                                   <label for="maillistNo">No!</label>
+                              </div>
+                              <span id="errorMessageRadio" class="errorMessage"></span>
+                         </div>
+                    <br>
+                         <div>
+                              <label for="robotQuestion">On a scale of 1 to 10, are we robots?</label>
+                              <select name="robotQuestion" id="robotQuestion">
+                                   <option value="1">1 - Definitely not</option>
+                                   <option value="2">2 - Almost certainly not</option>
+                                   <option value="3">3 - Most likely not</option>
+                                   <option value="4">4 - Probably not</option>
+                                   <option value="5">5 - Er&hellip; no?</option>
+                                   <option value="6">6 - Er&hellip; yes?</option>
+                                   <option value="7">7 - Probably</option>
+                                   <option value="8">8 - Most likely</option>
+                                   <option value="9">9 - Almost certainly</option>
+                                   <option value="10">10 - Definitely</option>
+                              </select>
+                              <span id="errorMessageSel" class="errorMessage"></span>
+                         </div>
+                    <br>
+                         <div class="checks">
+                              <p>What merch do you want the most? You can rank your favorites below:</p><br>
+                              <input type="checkbox" id="tShirt" value="T-Shirt" name="merch">
+                              <label for="tShirt" id="tShirtLabel">T-Shirt</label><br>
+                              <input type="checkbox" id="bookbag" value="Bookbag" name="merch">
+                              <label for="bookbag" id="bookbag">Bookbag</label><br>
+                              <input type="checkbox" id="mug" value="Coffee Mug" name="merch">
+                              <label for="mug" id="mug">Coffee Mug</label><br>
+                              <input type="checkbox" id="popSocket" value="Pop Socket" name="merch">
+                              <label for="popSocket" id="popSocket">Pop Socket</label><br>
+                              <input type="checkbox" id="hoodie" value="Hoodie" name="merch">
+                              <label for="hoodie" id="hoodie">Hoodie</label><br>
+                              <ol id="merchRank" class="merchRank">
+                                   <h4 id="merchRankHead">Merch Rank</h4>
+                              </ol>
+                         </div>
+                    <input id="submitBtn" type="submit" value="Submit">
+                    </fieldset>
+               </form>
+          </main>
+          <footer>
+               Copyright 2020 &copy; Brian Z. Hamilton <br>
+               Have a question? Contact us at <a href="mailto:contactmayberobots@gmail.com">contactmayberobots@gmail.com</a> <br>
+               Last updated: <script>document.write(document.lastModified);</script>
+          </footer>
+     </div>
+     <script src="exceptionhandling.js"></script>
+</body>
+</html>

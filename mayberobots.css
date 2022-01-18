@@ -1,0 +1,387 @@
+* { box-sizing: border-box; }
+
+/* Specialized Abbreviations
+     SS = Screen Size
+*/
+
+/* global rules (font, color, background-color) */
+body { 
+     font-family: helvetica, arial, sans-serif; 
+     color: #ddd;
+}    /* background-color changes with SS */
+header {
+     background-color: #002c00;
+     padding: 2% 5%;
+     border-top: 3px solid #000902;
+     border-bottom: 3px solid #000902;
+     border-left: 1px solid #000902;
+     border-right: 1px solid #000902;
+     border-radius: 1em;
+}    /* header padding changes with SS */
+#logo {
+     display: inline;
+}
+#logo img {
+     background-color: #000902;
+     width: 10%;
+     margin: auto .1% auto 0;
+     border-radius: 15%;
+}
+h1 {
+     font-size: 2em;
+     letter-spacing: .05em;
+     word-spacing: .1em;
+     font-style: bold;
+     display: inline;
+}
+nav {
+     background-color: #202020;
+     font-size: 1.5em;
+     text-align: center;
+     padding: 1%;
+     margin: 0;
+     border-bottom: 3px solid #000902;
+}
+nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+nav ul li { 
+     padding: .5% 1%;
+     display: inline;
+     border-left: 2px solid #000902;
+     border-right: 2px solid #000902;
+}    /* nav list items change appearance with SS */
+nav ul li:hover {
+     background-color: #303930;
+}
+nav a {
+     text-decoration: none;
+     color: #ddd;
+}
+#currentPage {
+     background-color: #002c00;
+     color: #ffebea;
+     border-right: 2px solid #55bf67;
+     border-left: 2px solid #55bf67;
+}
+h2, h3, h4, p, span, img {
+     padding: 1%;
+     margin: 1%;
+}
+a {
+     color: #d7574d;
+}
+footer { 
+     background-color: #002c00;  
+     width: 100%; 
+     margin-top: 2%; 
+     padding: 3%; 
+     text-align: center; 
+     font-size: .75em;
+     font-style: italic;
+     display: block; 
+     clear: both;
+     border-top: 3px solid #000902;
+     border-bottom: 3px solid #000902;
+     border-left: 1px solid #000902;
+     border-right: 1px solid #000902;
+     border-radius: .5em;
+}
+
+/* begin Podcast Page */
+h4 {
+     display: inline;
+}
+.podcast {
+     width: 75%;
+     margin: auto;
+     padding: 1%;
+     text-align: center;
+     border-top: 3px solid #000902;
+}
+.podcast h3, .podcast p {
+     padding: .5% 1%;
+}
+audio {
+     padding: .5% 1%;
+} /* end Podcast Page */
+
+/* begin form CSS */
+form {
+     padding: .5%;
+}
+form fieldset {
+     border: solid #000902;
+}
+form legend {
+     font-weight: bold;
+     letter-spacing: .06em;
+}
+form ul li {
+     list-style: none;
+} /* end form CSS */
+
+
+/* begin About Page */
+#caution {
+     font-size: 1.5em;
+     text-align: center;
+     background-color: #490600;
+     margin: 0;
+     border-bottom: 3px solid #000902;
+     padding: 1%;
+}
+.about {
+     display: block;
+     clear: both;
+     padding: 1%;
+     margin: 1%;
+     overflow: auto;
+}
+#aboutDavid {
+     border-top: 3px solid #000902;
+     border-bottom: 3px solid #000902;
+}
+.right {
+     width: 33%;
+     min-height: 60px;
+     float: right;
+}
+.left {
+     width: 33%;
+     min-height: 60px;
+     float: left;
+} /* end About Page */
+
+/* begin Contact form */
+form input { 
+     background: #404040;
+     color: #ddd; 
+     border: none; 
+     font: normal 1em/1.5em helvetica, arial, sans-serif; 
+     margin: 1% 2%;
+     text-align: left;
+}
+.nameBoxes {
+     display: inline;
+     padding: 0;
+     margin: 0;
+}
+form textarea { 
+     background: #404040; 
+     border: none; 
+     font: normal 1em "Helvetica Neue", helvetica, arial, sans-serif; 
+     padding: 1%; 
+     width: 100%;
+     min-height: 100px;
+}
+.errorMessage {
+     font-size: smaller;
+     color: #f9796f;
+     display: none;
+}
+#robotQuestion {
+     background: #404040;
+     color: #ddd;
+     border: none;
+     font: normal 1em/1.5em helvetica, arial, sans-serif; 
+     margin: 1%;
+     text-align: left;
+}
+#merchRank {
+     font-size: large;
+     float: right;
+     width: 33%;
+}
+#merchRankHead {
+     font-size: large;    
+     float: right;
+     width: 30%;
+     display: none;
+} /* end Contact form */
+
+/* begin Calendar */
+#calendar {
+     margin: 1%; 
+     border: 3px solid #000902; 
+}
+#calendar h2 {
+     text-align: center;
+}
+
+article table {
+     width: 100%;
+     text-align: center;
+     table-layout: fixed;
+}
+  
+article table caption {
+     color: #bbb; 
+     padding: 1%;
+     width: 182px;
+}
+  
+article tr td:first-child, article tr td:last-child {
+     background: #202020;
+}
+  
+article th, article td {
+     border: 1px solid #666;
+     border-collapse: collapse;
+     padding: 1%;
+     width: 14.2857%;
+}
+  
+article tr td:first-of-type, article tr th:first-of-type {
+     border-left: 0;
+}
+  
+article tr td:last-of-type, article tr th:last-of-type {
+     border-right: 0;
+}
+  
+article th {
+     background: #404040;
+}
+  
+article td p:first-of-type {
+     font-weight: bold;
+     text-align: right;
+} /* end Calendar */
+
+/* begin Web Safety page */
+#googleMap {
+     width: 100%;
+}
+#safetyLinks {
+     border-top: 3px solid #000902;
+     margin-top: 20px;
+}
+#location {
+     width: 60%;
+     margin: auto;
+     text-align: center;
+}
+.dataHeading {
+     padding-right: 0;
+     margin-left: 0;
+}
+.result {
+     display: inline; 
+     color: #f9796f; 
+     padding: 0;
+     margin: 0;
+}
+#locationData {
+     padding-left: 1%;
+     margin-left: 1%;
+     display: block;
+} /* end Web Safety Page */
+
+
+/* Begin Screen Size Adjustments */
+
+/* Mobile View */
+@media only screen and (max-width:549px) {
+     body {
+          background-color: #202020;
+          margin: 0;
+     }
+     header {
+          border: none;
+          border-radius: 0;
+          border-bottom: 3px solid #000902;
+     }
+     nav {
+          padding: 0;
+     }
+     nav ul li {
+          padding: 0 1%;
+          display: block;
+          border-left: none;
+          border-right: none;
+     }
+     footer {
+          border: none;
+          border-radius: 0;
+          border-top: 3px solid #000902;
+     }
+     h4 {
+          display: block;
+     }
+     .podcast {
+          width: 90%;
+     }
+     td span {
+          font-size: .8em;
+     }
+     .dataHeading {
+          margin: .1% .5%;
+          padding: .1% .5%;
+          margin-top: .5%;
+     }
+     .result {
+          margin-left: 10px;
+     }
+     #googleMap {
+          width: 95%;
+          margin: auto;
+     }
+     form {
+          border: solid #000902;
+     }
+     form fieldset {
+          border: none;
+     }
+     .nameBoxes {
+          display: block;
+     }
+     #caution {
+          font-size: .8em;
+     }
+     .right {
+          width: 80%;
+          margin: auto;
+          float: none;
+          display: block;
+     }
+     .left {
+          width: 80%;
+          margin: auto;
+          float: none;
+          display: block;
+     }
+     #merchRank {
+          float: none;
+          display: block;
+          width: 100%;
+     }
+}
+
+/* Tablet View */
+@media only screen and (min-width:550px) {
+     body {
+          background-color: #202020;  
+     }
+}
+
+/* Desktop View */
+@media only screen and (min-width:1024px) {
+     body {
+          background-color: #151615;  
+     }
+     #wrapper { margin-left: auto; 
+          margin-right: auto; 
+          width: 80%; 
+          padding: 2%;
+          background-color: #202020; 
+          border-radius: .7%;
+          box-shadow: 0 7px 10px 5px #0a0b0a;
+     }
+     form {
+          width: 80%;
+          margin: 0 auto;
+     }
+}
