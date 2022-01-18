@@ -8,7 +8,7 @@
 var donateArray = ["You get nothing! <br><br>But that's okay&mdash;we still love you.", // this is an array to determine what the "rewards" in each donation bracket are.
                           "You are a page in the courts of the mighty, and you have paid your taxes. <br><br>As a reward, we permit you to live.",
                           "A knight of some renown. We take pride in your accomplishments as benefactors of your safety and entertainment. <br><br>As a reward, we offer you a share in the spoils of war&mdash;90/10 split.",
-                          "You are a fellow king, and we pleasure in your company! <br><br>Reward? What reward would suit a king? <br>No! You are our honored guest by right! Join us in feasting!"]; 
+                          "You are a fellow king, and we are glad of your company! <br><br>Reward? What reward would suit a king? <br>No! You are our honored guest by right! Join us in feasting!"]; 
 var announcement = ["New episodes available every Monday by 6am!",
                     "We're going on tour! Hear us ramble in person March 4 &ndash; April 15!",
                     "If you're reading this, you've scrolled past the donation section.",
